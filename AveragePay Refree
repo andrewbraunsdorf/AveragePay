@@ -1,0 +1,24 @@
+var firstname="Andrew";
+var lastname= "Braunsdorf";
+var assistant= 40.00;
+var ref12= 50.00;
+var ref14= 55.00;
+var ref16= 65.00;
+
+var argame= 20;
+var game12= 3;
+var game14= 4;
+var game16= 6;
+
+var arfees= assistant * argame;
+var ref12fees= ref12 * game12;
+var ref14fees= ref14 * game14;
+var ref16fees= ref16 * game16;
+var refgames= game12 + game14 + game16;
+var totalgames= argame + refgames;
+var totalfees= arfees + ref12fees + ref14fees + ref16fees;
+
+var averagefee= totalfees / totalgames;
+
+
+console.log(firstname, lastname, "you have reffed", totalgames, "total games,", argame, "assistant referee games and", refgames, "center referee games, and earned", totalfees.toLocaleString('en-US', {style: 'currency', currency: 'USD'}), "for an average fee of",averagefee.toLocaleString('en-US', {style: 'currency', currency: 'USD'}) + ".");
